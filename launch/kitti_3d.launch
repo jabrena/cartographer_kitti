@@ -12,9 +12,9 @@
 -->
 
 <launch>
-  <node name="cartographer_node" pkg="cartographer_ros"
+  <node name="cartographer_node" pkg="cartographer_kitti"
       type="cartographer_node" args="
-          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_directory $(find cartographer_kitti)/configuration_files
           -configuration_basename kitti_3d.lua"
       output="screen">
   </node>

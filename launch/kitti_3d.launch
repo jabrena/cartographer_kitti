@@ -12,10 +12,10 @@
 -->
 
 <launch>
-  <node name="cartographer_node" pkg="cartographer_kitti"
+  <node name="cartographer_node" pkg="cartographer_ros"
       type="cartographer_node" args="
-          -configuration_directory /home/jabrena/catkin_ws2/src/cartographer_kitti/configuration_files
-          -configuration_basename kitti_4d.lua"
+          -configuration_directory $(find cartographer_kitti)/configuration_files
+          -configuration_basename kitti_3d.lua"
       output="screen">
   </node>
 </launch>
